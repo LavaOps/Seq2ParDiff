@@ -1,3 +1,11 @@
+This repository contains source code and data for "Differential Testing for Sequential to Parallel Transformations" published at SC Workshops 2025.
+
+## Directory Structure
+- **autoparllm** and **dataracebench**: two datasets the experiments were conducted on
+- **data**: experimental data of the two datasets
+- **RQ-Data**: analysis results for the RQs
+
+
 The experiments can be conducted on a Linux machine.
 
 ## Get Artifact
