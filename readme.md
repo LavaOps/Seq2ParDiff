@@ -46,7 +46,7 @@ The experiments can be conducted on a Linux machine.
 
 ## Dataset Preprocessing
 If you want to start from the scratch, delete the two dataset directories: autoparllm and dataracebench, from the project directory.
-Then, follow the below steps for preprocessing.
+Then, follow the below steps for preprocessing. You don't need to do this if you want to execute differential testing on the preprocessed datasets.
 
 ### AutoParLLM
 
