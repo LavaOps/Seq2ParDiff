@@ -1,0 +1,65 @@
+,,
+,,
+sequential,7,
+parallel,13,
+Types of Parallel issues,,#pragma fix
+stale variable,6,need last private
+floating point rounding,3, 
+data race,2,add reduction clause
+parallel initialization,1,need first private
+cross-iteration dependence,1,
+, , 
+,Count, 
+Number of AutoParLLM Programs,320,
+Sequential non-determinism Found,42,
+Potential Faults found Seq2ParDiff,39,
+False Positives,19,
+True Positives,20,
+, ,
+,,
+,,
+51,file path,different file paths for sequential and parallel execution files
+53,file path,different file paths for sequential and parallel execution files
+66,floating-point,round-off error on 13th decimal point
+67,random value,rand() is used in variables
+78,time data,different timing data in each execution
+86,file path,different file paths for sequential and parallel execution files
+115,file path,different file paths for sequential and parallel execution files
+116,random value,rand() is used in variables
+134,random value,rand() is used in variables
+151,file path,different file paths for sequential and parallel execution files
+172,floating-point,round-off error on 14th decimal point
+173,floating-point,round-off error on 14th decimal point
+184,file path,different file paths for sequential and parallel execution files
+188,file path,different file paths for sequential and parallel execution files
+191,floating-point,"round-off error on 6th decimal point, diff = 0.000001"
+202,random value,rand() is used in variables
+270,file path,different file paths for sequential and parallel execution files
+271,file path,different file paths for sequential and parallel execution files
+281,file path,different file paths for sequential and parallel execution files
+,,
+,,
+,,
+,,
+,,
+Program No,,
+3,cross-iteration dependence,
+18,stale variable,
+25,"data race, missing private",
+62,uninitialized variable,
+68,parallel initialization,
+73,stale variable,
+100,stale variable,
+101,staile variable,
+117,"array index out of bounds, random value",
+118,"array index out of bounds, random value",
+160,"data race, missing reduction",
+171,stale variable,
+187,floating-point,
+208,stale variable,
+209,uninitialized array,
+237,uninitialized array,
+242,floating-point,
+245,floating-point,
+277,uninitialized array,
+287,uninitialized array,

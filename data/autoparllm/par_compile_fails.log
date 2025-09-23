@@ -1,0 +1,168 @@
+2/1.c:
+trans-validate/differential-testing/autoparllm/2/1.c: In function 'main':
+trans-validate/differential-testing/autoparllm/2/1.c:13:34: error: 'i' undeclared (first use in this function)
+   13 | #pragma omp parallel for private(i)
+      |                                  ^
+trans-validate/differential-testing/autoparllm/2/1.c:13:34: note: each undeclared identifier is reported only once for each function it appears in
+
+11/1.c:
+trans-validate/differential-testing/autoparllm/11/1.c: In function 'main':
+trans-validate/differential-testing/autoparllm/11/1.c:26:34: error: 'i' undeclared (first use in this function)
+   26 | #pragma omp parallel for private(i)
+      |                                  ^
+trans-validate/differential-testing/autoparllm/11/1.c:26:34: note: each undeclared identifier is reported only once for each function it appears in
+
+14/1.c:
+trans-validate/differential-testing/autoparllm/14/1.c: In function 'main':
+trans-validate/differential-testing/autoparllm/14/1.c:26:34: error: 'i' undeclared (first use in this function)
+   26 | #pragma omp parallel for private(i)
+      |                                  ^
+trans-validate/differential-testing/autoparllm/14/1.c:26:34: note: each undeclared identifier is reported only once for each function it appears in
+
+15/1.c:
+trans-validate/differential-testing/autoparllm/15/1.c: In function 'main':
+trans-validate/differential-testing/autoparllm/15/1.c:16:34: error: 'i' undeclared (first use in this function)
+   16 | #pragma omp parallel for private(i)
+      |                                  ^
+trans-validate/differential-testing/autoparllm/15/1.c:16:34: note: each undeclared identifier is reported only once for each function it appears in
+
+16/1.c:
+trans-validate/differential-testing/autoparllm/16/1.c: In function 'main':
+trans-validate/differential-testing/autoparllm/16/1.c:14:34: error: 'k' undeclared (first use in this function)
+   14 | #pragma omp parallel for private(k)
+      |                                  ^
+trans-validate/differential-testing/autoparllm/16/1.c:14:34: note: each undeclared identifier is reported only once for each function it appears in
+
+23/1.c:
+trans-validate/differential-testing/autoparllm/23/1.c: In function 'main':
+trans-validate/differential-testing/autoparllm/23/1.c:61:11: error: implicit declaration of function 'omp_set_dynamic' [-Wimplicit-function-declaration]
+   61 |     (void)omp_set_dynamic(FALSE);
+      |           ^~~~~~~~~~~~~~~
+trans-validate/differential-testing/autoparllm/23/1.c:62:9: error: implicit declaration of function 'omp_get_dynamic' [-Wimplicit-function-declaration]
+   62 |     if (omp_get_dynamic()) {
+      |         ^~~~~~~~~~~~~~~
+trans-validate/differential-testing/autoparllm/23/1.c:65:11: error: implicit declaration of function 'omp_set_num_threads' [-Wimplicit-function-declaration]
+   65 |     (void)omp_set_num_threads(4);
+      |           ^~~~~~~~~~~~~~~~~~~
+trans-validate/differential-testing/autoparllm/23/1.c:88:34: error: 'j' undeclared (first use in this function)
+   88 | #pragma omp parallel for private(j)
+      |                                  ^
+trans-validate/differential-testing/autoparllm/23/1.c:88:34: note: each undeclared identifier is reported only once for each function it appears in
+
+40/1.c:
+trans-validate/differential-testing/autoparllm/40/1.c: In function 'main':
+trans-validate/differential-testing/autoparllm/40/1.c:21:34: error: 'j' undeclared (first use in this function)
+   21 | #pragma omp parallel for private(j)
+      |                                  ^
+trans-validate/differential-testing/autoparllm/40/1.c:21:34: note: each undeclared identifier is reported only once for each function it appears in
+
+43/1.c:
+trans-validate/differential-testing/autoparllm/43/1.c: In function 'main':
+trans-validate/differential-testing/autoparllm/43/1.c:15:34: error: 'k' undeclared (first use in this function)
+   15 | #pragma omp parallel for private(k)
+      |                                  ^
+trans-validate/differential-testing/autoparllm/43/1.c:15:34: note: each undeclared identifier is reported only once for each function it appears in
+
+44/1.c:
+trans-validate/differential-testing/autoparllm/44/1.c: In function 'main':
+trans-validate/differential-testing/autoparllm/44/1.c:17:34: error: 'k' undeclared (first use in this function)
+   17 | #pragma omp parallel for private(k)
+      |                                  ^
+trans-validate/differential-testing/autoparllm/44/1.c:17:34: note: each undeclared identifier is reported only once for each function it appears in
+
+54/1.c:
+trans-validate/differential-testing/autoparllm/54/1.c: In function 'main':
+trans-validate/differential-testing/autoparllm/54/1.c:78:34: error: 'j' undeclared (first use in this function)
+   78 | #pragma omp parallel for private(j)
+      |                                  ^
+trans-validate/differential-testing/autoparllm/54/1.c:78:34: note: each undeclared identifier is reported only once for each function it appears in
+
+155/1.c:
+trans-validate/differential-testing/autoparllm/155/1.c: In function 'main':
+trans-validate/differential-testing/autoparllm/155/1.c:58:34: error: 'j' undeclared (first use in this function)
+   58 | #pragma omp parallel for private(j)
+      |                                  ^
+trans-validate/differential-testing/autoparllm/155/1.c:58:34: note: each undeclared identifier is reported only once for each function it appears in
+
+189/1.c:
+trans-validate/differential-testing/autoparllm/189/1.c: In function 'main':
+trans-validate/differential-testing/autoparllm/189/1.c:29:34: error: 'end_time' undeclared (first use in this function)
+   29 |     printf("Time taken: %f s\n", end_time);
+      |                                  ^~~~~~~~
+trans-validate/differential-testing/autoparllm/189/1.c:29:34: note: each undeclared identifier is reported only once for each function it appears in
+
+214/1.c:
+trans-validate/differential-testing/autoparllm/214/1.c: In function 'tiled_sgemm_tt':
+trans-validate/differential-testing/autoparllm/214/1.c:252:34: error: 'e' undeclared (first use in this function)
+  252 | #pragma omp parallel for private(e)
+      |                                  ^
+trans-validate/differential-testing/autoparllm/214/1.c:252:34: note: each undeclared identifier is reported only once for each function it appears in
+
+215/1.c:
+trans-validate/differential-testing/autoparllm/215/1.c: In function 'main':
+trans-validate/differential-testing/autoparllm/215/1.c:20:34: error: 'i' undeclared (first use in this function)
+   20 | #pragma omp parallel for private(i)
+      |                                  ^
+trans-validate/differential-testing/autoparllm/215/1.c:20:34: note: each undeclared identifier is reported only once for each function it appears in
+
+217/1.c:
+trans-validate/differential-testing/autoparllm/217/1.c: In function 'main':
+trans-validate/differential-testing/autoparllm/217/1.c:22:5: warning: 'ftime' is deprecated: Use gettimeofday or clock_gettime instead [-Wdeprecated-declarations]
+   22 |     ftime(&tstart);
+      |     ^~~~~
+In file included from trans-validate/differential-testing/autoparllm/217/1.c:7:
+/usr/include/sys/timeb.h:29:12: note: declared here
+   29 | extern int ftime (struct timeb *__timebuf)
+      |            ^~~~~
+trans-validate/differential-testing/autoparllm/217/1.c:61:5: warning: 'ftime' is deprecated: Use gettimeofday or clock_gettime instead [-Wdeprecated-declarations]
+   61 |     ftime(&tend);
+      |     ^~~~~
+/usr/include/sys/timeb.h:29:12: note: declared here
+   29 | extern int ftime (struct timeb *__timebuf)
+      |            ^~~~~
+
+244/1.c:
+trans-validate/differential-testing/autoparllm/244/1.c: In function 'tiled_sgemm_tt':
+trans-validate/differential-testing/autoparllm/244/1.c:207:34: error: 'col' undeclared (first use in this function); did you mean 'cosl'?
+  207 | #pragma omp parallel for private(col)
+      |                                  ^~~
+      |                                  cosl
+trans-validate/differential-testing/autoparllm/244/1.c:207:34: note: each undeclared identifier is reported only once for each function it appears in
+trans-validate/differential-testing/autoparllm/244/1.c:247:34: error: 'e' undeclared (first use in this function)
+  247 | #pragma omp parallel for private(e)
+      |                                  ^
+
+282/1.c:
+trans-validate/differential-testing/autoparllm/282/1.c: In function 'main':
+trans-validate/differential-testing/autoparllm/282/1.c:14:34: error: 'j' undeclared (first use in this function)
+   14 | #pragma omp parallel for private(j)
+      |                                  ^
+trans-validate/differential-testing/autoparllm/282/1.c:14:34: note: each undeclared identifier is reported only once for each function it appears in
+
+283/1.c:
+trans-validate/differential-testing/autoparllm/283/1.c: In function 'main':
+trans-validate/differential-testing/autoparllm/283/1.c:14:34: error: 'j' undeclared (first use in this function)
+   14 | #pragma omp parallel for private(j)
+      |                                  ^
+trans-validate/differential-testing/autoparllm/283/1.c:14:34: note: each undeclared identifier is reported only once for each function it appears in
+
+286/1.c:
+trans-validate/differential-testing/autoparllm/286/1.c: In function 'main':
+trans-validate/differential-testing/autoparllm/286/1.c:14:34: error: 'j' undeclared (first use in this function)
+   14 | #pragma omp parallel for private(j)
+      |                                  ^
+trans-validate/differential-testing/autoparllm/286/1.c:14:34: note: each undeclared identifier is reported only once for each function it appears in
+
+287/1.c:
+trans-validate/differential-testing/autoparllm/287/1.c: In function 'main':
+trans-validate/differential-testing/autoparllm/287/1.c:14:34: error: 'j' undeclared (first use in this function)
+   14 | #pragma omp parallel for private(j)
+      |                                  ^
+trans-validate/differential-testing/autoparllm/287/1.c:14:34: note: each undeclared identifier is reported only once for each function it appears in
+
+317/1.c:
+trans-validate/differential-testing/autoparllm/317/1.c: In function 'setup':
+trans-validate/differential-testing/autoparllm/317/1.c:60:34: error: 'i' undeclared (first use in this function)
+   60 | #pragma omp parallel for private(i)
+      |                                  ^
+trans-validate/differential-testing/autoparllm/317/1.c:60:34: note: each undeclared identifier is reported only once for each function it appears in

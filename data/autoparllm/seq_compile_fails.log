@@ -1,0 +1,162 @@
+53/1.c:
+trans-validate/differential-testing/autoparllm/53/1.c: In function 'gauss_P':
+trans-validate/differential-testing/autoparllm/53/1.c:215:13: error: too many arguments to function 'parloop'; expected 0, have 2
+  215 |             parloop(norm, row);
+      |             ^~~~~~~ ~~~~
+trans-validate/differential-testing/autoparllm/53/1.c:36:7: note: declared here
+   36 | void *parloop();
+      |       ^~~~~~~
+trans-validate/differential-testing/autoparllm/53/1.c: At top level:
+trans-validate/differential-testing/autoparllm/53/1.c:232:7: error: conflicting types for 'parloop'; have 'void *(int,  int)'
+  232 | void *parloop(int norm, int row) {
+      |       ^~~~~~~
+trans-validate/differential-testing/autoparllm/53/1.c:36:7: note: previous declaration of 'parloop' with type 'void *(void)'
+   36 | void *parloop();
+      |       ^~~~~~~
+
+102/1.c:
+trans-validate/differential-testing/autoparllm/102/1.c: In function 'print':
+trans-validate/differential-testing/autoparllm/102/1.c:112:9: error: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  112 |         printf("%lf %lf\n", newSxx[i], newSyy[i]);
+      |         ^~~~~~
+trans-validate/differential-testing/autoparllm/102/1.c:88:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   87 | #include <stdlib.h>
+  +++ |+#include <stdio.h>
+   88 | int dummyMethod1();
+trans-validate/differential-testing/autoparllm/102/1.c:112:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  112 |         printf("%lf %lf\n", newSxx[i], newSyy[i]);
+      |         ^~~~~~
+trans-validate/differential-testing/autoparllm/102/1.c:112:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+
+136/1.c:
+trans-validate/differential-testing/autoparllm/136/1.c: In function 'main':
+trans-validate/differential-testing/autoparllm/136/1.c:18:17: error: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+   18 |     float *a = (malloc(sizeof(float) * 100000));
+      |                 ^~~~~~
+trans-validate/differential-testing/autoparllm/136/1.c:4:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+    3 | #include <stdio.h>
+  +++ |+#include <stdlib.h>
+    4 | int dummyMethod1();
+trans-validate/differential-testing/autoparllm/136/1.c:18:17: warning: incompatible implicit declaration of built-in function 'malloc' [-Wbuiltin-declaration-mismatch]
+   18 |     float *a = (malloc(sizeof(float) * 100000));
+      |                 ^~~~~~
+trans-validate/differential-testing/autoparllm/136/1.c:18:17: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+trans-validate/differential-testing/autoparllm/136/1.c:57:5: error: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+   57 |     free(a);
+      |     ^~~~
+trans-validate/differential-testing/autoparllm/136/1.c:57:5: note: include '<stdlib.h>' or provide a declaration of 'free'
+trans-validate/differential-testing/autoparllm/136/1.c:57:5: warning: incompatible implicit declaration of built-in function 'free' [-Wbuiltin-declaration-mismatch]
+trans-validate/differential-testing/autoparllm/136/1.c:57:5: note: include '<stdlib.h>' or provide a declaration of 'free'
+
+155/1.c:
+trans-validate/differential-testing/autoparllm/155/1.c: In function 'init':
+trans-validate/differential-testing/autoparllm/155/1.c:43:16: error: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+   43 |     priv->p = (malloc((orig->N) * sizeof((*priv->p))));
+      |                ^~~~~~
+trans-validate/differential-testing/autoparllm/155/1.c:10:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+    9 | #include <stdint.h>
+  +++ |+#include <stdlib.h>
+   10 | int dummyMethod1();
+trans-validate/differential-testing/autoparllm/155/1.c:43:16: warning: incompatible implicit declaration of built-in function 'malloc' [-Wbuiltin-declaration-mismatch]
+   43 |     priv->p = (malloc((orig->N) * sizeof((*priv->p))));
+      |                ^~~~~~
+trans-validate/differential-testing/autoparllm/155/1.c:43:16: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+trans-validate/differential-testing/autoparllm/155/1.c: In function 'main':
+trans-validate/differential-testing/autoparllm/155/1.c:52:14: warning: incompatible implicit declaration of built-in function 'malloc' [-Wbuiltin-declaration-mismatch]
+   52 |     var.p = (malloc(var.N * sizeof((*var.p))));
+      |              ^~~~~~
+trans-validate/differential-testing/autoparllm/155/1.c:52:14: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+
+161/1.c:
+trans-validate/differential-testing/autoparllm/161/1.c: In function 'main':
+trans-validate/differential-testing/autoparllm/161/1.c:56:17: error: implicit declaration of function 'abort' [-Wimplicit-function-declaration]
+   56 |                 abort();
+      |                 ^~~~~
+trans-validate/differential-testing/autoparllm/161/1.c:33:1: note: include '<stdlib.h>' or provide a declaration of 'abort'
+   32 | #include <stdio.h>
+  +++ |+#include <stdlib.h>
+   33 | int dummyMethod1();
+trans-validate/differential-testing/autoparllm/161/1.c:56:17: warning: incompatible implicit declaration of built-in function 'abort' [-Wbuiltin-declaration-mismatch]
+   56 |                 abort();
+      |                 ^~~~~
+trans-validate/differential-testing/autoparllm/161/1.c:56:17: note: include '<stdlib.h>' or provide a declaration of 'abort'
+
+166/1.c:
+trans-validate/differential-testing/autoparllm/166/1.c:10:1: warning: 'no_throw' attribute directive ignored [-Wattributes]
+   10 | clock_t clock() __attribute__((no_throw));
+      | ^~~~~~~
+
+167/1.c:
+trans-validate/differential-testing/autoparllm/167/1.c: In function 'main':
+trans-validate/differential-testing/autoparllm/167/1.c:12:22: error: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
+   12 |     int *a = (int *)(calloc(10000000, sizeof(int)));
+      |                      ^~~~~~
+trans-validate/differential-testing/autoparllm/167/1.c:4:1: note: include '<stdlib.h>' or provide a declaration of 'calloc'
+    3 | #include <stdio.h>
+  +++ |+#include <stdlib.h>
+    4 | int dummyMethod1();
+trans-validate/differential-testing/autoparllm/167/1.c:12:22: warning: incompatible implicit declaration of built-in function 'calloc' [-Wbuiltin-declaration-mismatch]
+   12 |     int *a = (int *)(calloc(10000000, sizeof(int)));
+      |                      ^~~~~~
+trans-validate/differential-testing/autoparllm/167/1.c:12:22: note: include '<stdlib.h>' or provide a declaration of 'calloc'
+
+170/1.c:
+trans-validate/differential-testing/autoparllm/170/1.c: In function 'inicia':
+trans-validate/differential-testing/autoparllm/170/1.c:44:31: error: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   44 |             x[i * 835 + j] = (rand() % 100);
+      |                               ^~~~
+trans-validate/differential-testing/autoparllm/170/1.c: In function 'main':
+trans-validate/differential-testing/autoparllm/170/1.c:81:5: error: implicit declaration of function 'srand' [-Wimplicit-function-declaration]
+   81 |     srand((time((void *)0)));
+      |     ^~~~~
+trans-validate/differential-testing/autoparllm/170/1.c:81:12: error: implicit declaration of function 'time' [-Wimplicit-function-declaration]
+   81 |     srand((time((void *)0)));
+      |            ^~~~
+trans-validate/differential-testing/autoparllm/170/1.c:8:1: note: 'time' is defined in header '<time.h>'; this is probably fixable by adding '#include <time.h>'
+    7 | #include <stdio.h>
+  +++ |+#include <time.h>
+    8 | int dummyMethod1();
+
+183/1.c:
+trans-validate/differential-testing/autoparllm/183/1.c: In function 'main':
+trans-validate/differential-testing/autoparllm/183/1.c:44:5: error: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   44 |     printf("   Sum = %f\n", sum);
+      |     ^~~~~~
+trans-validate/differential-testing/autoparllm/183/1.c:14:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   13 | #include "omp.h"
+  +++ |+#include <stdio.h>
+   14 | #include <omp.h>
+trans-validate/differential-testing/autoparllm/183/1.c:44:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+   44 |     printf("   Sum = %f\n", sum);
+      |     ^~~~~~
+trans-validate/differential-testing/autoparllm/183/1.c:44:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+
+208/1.c:
+trans-validate/differential-testing/autoparllm/208/1.c: In function 'main':
+trans-validate/differential-testing/autoparllm/208/1.c:15:14: error: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+   15 |     length = strlen(temp);
+      |              ^~~~~~
+trans-validate/differential-testing/autoparllm/208/1.c:4:1: note: include '<string.h>' or provide a declaration of 'strlen'
+    3 | #include <stdio.h>
+  +++ |+#include <string.h>
+    4 | int dummyMethod1();
+trans-validate/differential-testing/autoparllm/208/1.c:15:14: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+   15 |     length = strlen(temp);
+      |              ^~~~~~
+trans-validate/differential-testing/autoparllm/208/1.c:15:14: note: include '<string.h>' or provide a declaration of 'strlen'
+
+217/1.c:
+trans-validate/differential-testing/autoparllm/217/1.c: In function 'main':
+trans-validate/differential-testing/autoparllm/217/1.c:22:5: warning: 'ftime' is deprecated: Use gettimeofday or clock_gettime instead [-Wdeprecated-declarations]
+   22 |     ftime(&tstart);
+      |     ^~~~~
+In file included from trans-validate/differential-testing/autoparllm/217/1.c:7:
+/usr/include/sys/timeb.h:29:12: note: declared here
+   29 | extern int ftime (struct timeb *__timebuf)
+      |            ^~~~~
+trans-validate/differential-testing/autoparllm/217/1.c:61:5: warning: 'ftime' is deprecated: Use gettimeofday or clock_gettime instead [-Wdeprecated-declarations]
+   61 |     ftime(&tend);
+      |     ^~~~~
+/usr/include/sys/timeb.h:29:12: note: declared here
+   29 | extern int ftime (struct timeb *__timebuf)
+      |            ^~~~~

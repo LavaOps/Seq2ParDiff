@@ -1,0 +1,202 @@
+id,file,plabel,language,ompversion,hw,pattern
+1,DRB001-antidep1-orig-yes.c,Y1,C,3.0,,"Anti-dependence,single loop"
+2,DRB002-antidep1-var-yes.c,Y1,C,3.0,,"Anti-dependence,single loop"
+3,DRB003-antidep2-orig-yes.c,Y1,C,3.0,,"Anti-dependence,2-level loop"
+4,DRB004-antidep2-var-yes.c,Y1,C,3.0,,"Anti-dependence,2-level loop"
+5,DRB005-indirectaccess1-orig-yes.c,Y7,C,3.0,,Indirect access
+6,DRB006-indirectaccess2-orig-yes.c,Y7,C,3.0,,Indirect access
+7,DRB007-indirectaccess3-orig-yes.c,Y7,C,3.0,,Indirect access
+8,DRB008-indirectaccess4-orig-yes.c,Y7,C,3.0,,Indirect access
+9,DRB009-lastprivatemissing-orig-yes.c,Y2,C,3.0,,lastprivate
+10,DRB010-lastprivatemissing-var-yes.c,Y2,C,3.0,,lastprivate
+11,DRB011-minusminus-orig-yes.c,Y3,C,3.0,,
+12,DRB012-minusminus-var-yes.c,Y3,C,3.0,,
+13,DRB013-nowait-orig-yes.c,Y3,C,3.0,,nowait
+14,DRB014-outofbounds-orig-yes.c,Y6,C,3.0,,"out of bound,true dependence"
+15,DRB015-outofbounds-var-yes.c,Y6,C,3.0,,"out of bound,true dependence"
+16,DRB016-outputdep-orig-yes.c,Y1,C,3.0,,"Output dependence,true dependence"
+17,DRB017-outputdep-var-yes.c,Y1,C,3.0,,"Output dependence,true dependence"
+18,DRB018-plusplus-orig-yes.c,Y1,C,3.0,,
+19,DRB019-plusplus-var-yes.c,Y1,C,3.0,,
+20,DRB020-privatemissing-orig-yes.c,Y2,C,3.0,,
+21,DRB021-privatemissing-var-yes.c,Y2,C,3.0,,
+22,DRB022-reductionmissing-orig-yes.c,Y2,C,3.0,,reduction
+23,DRB023-reductionmissing-var-yes.c,Y2,C,3.0,,reduction
+24,DRB024-sections1-orig-yes.c,Y3,C,3.0,,reduction
+25,DRB025-simdtruedep-orig-yes.c,"Y1,Y4",C,3.0,,SIMD
+26,DRB026-simdtruedep-var-yes.c,"Y1,Y4",C,3.0,,SIMD
+27,DRB027-targetparallelfor-orig-yes.c,"Y1,Y5",C,4.5,,offload
+28,DRB028-taskdependmissing-orig-yes.c,Y3,C,3.0,,task
+29,DRB029-truedep1-orig-yes.c,Y1,C,3.0,,"true dependence,single loop"
+30,DRB030-truedep1-var-yes.c,Y1,C,3.0,,"true dependence,single loop"
+31,DRB031-truedepfirstdimension-orig-yes.c,Y1,C,3.0,,"true dependence,2D loop"
+32,DRB032-truedepfirstdimension-var-yes.c,Y1,C,3.0,,"true dependence,2d loop"
+33,DRB033-truedeplinear-orig-yes.c,Y1,C,3.0,,true dependence
+34,DRB034-truedeplinear-var-yes.c,Y1,C,3.0,,true dependence
+35,DRB035-truedepscalar-orig-yes.c,Y1,C,3.0,,true dependence
+36,DRB036-truedepscalar-var-yes.c,Y1,C,3.0,,true dependence
+37,DRB037-truedepseconddimension-orig-yes.c,Y1,C,3.0,,"true dependence,2D loop"
+38,DRB038-truedepseconddimension-var-yes.c,Y1,C,3.0,,"true dependence,2D loop"
+39,DRB039-truedepsingleelement-orig-yes.c,Y1,C,3.0,,true dependence
+40,DRB040-truedepsingleelement-var-yes.c,Y1,C,3.0,,true dependence
+41,DRB041-3mm-parallel-no.c,N2,C,3.0,,Polyhedral
+42,DRB042-3mm-tile-no.c,"N2,N4",C,3.0,,Polyhedral
+43,DRB043-adi-parallel-no.c,N2,C,3.0,,Polyhedral
+44,DRB044-adi-tile-no.c,"N2,N4",C,3.0,,Polyhedral
+45,DRB045-doall1-orig-no.c,N1,C,3.0,,Doall loop
+46,DRB046-doall2-orig-no.c,N1,C,3.0,,Doall loop
+47,DRB047-doallchar-orig-no.c,N1,C,3.0,,Doall loop
+48,DRB048-firstprivate-orig-no.c,N2,C,3.0,,firstprivate
+49,DRB049-fprintf-orig-no.c,N6,C,3.0,,
+50,DRB050-functionparameter-orig-no.c,N6,C,3.0,,
+51,DRB051-getthreadnum-orig-no.c,N6,C,3.0,,
+52,DRB052-indirectaccesssharebase-orig-no.c,N7,C,3.0,,Indirect array accesses
+53,DRB053-inneronly1-orig-no.c,N1,C,3.0,,Two-level nested loop
+54,DRB054-inneronly2-orig-no.c,N1,C,3.0,,Two-level nested loop
+55,DRB055-jacobi2d-parallel-no.c,N7,C,3.0,,Polyhedral
+56,DRB056-jacobi2d-tile-no.c,"N4,N7",C,3.0,,Polyhedral
+57,DRB057-jacobiinitialize-orig-no.c,N7,C,3.0,,
+58,DRB058-jacobikernel-orig-no.c,N7,C,3.0,,reduction
+59,DRB059-lastprivate-orig-no.c,N2,C,3.0,,lastprivate
+60,DRB060-matrixmultiply-orig-no.c,N2,C,3.0,,
+61,DRB061-matrixvector1-orig-no.c,N7,C,3.0,,
+62,DRB062-matrixvector2-orig-no.c,N7,C,3.0,,
+63,DRB063-outeronly1-orig-no.c,N2,C,3.0,,
+64,DRB064-outeronly2-orig-no.c,N2,C,3.0,,
+65,DRB065-pireduction-orig-no.c,N7,C,3.0,,
+66,DRB066-pointernoaliasing-orig-no.c,N6,C,3.0,,
+67,DRB067-restrictpointer1-orig-no.c,N6,C,3.0,,
+68,DRB068-restrictpointer2-orig-no.c,N6,C,3.0,,
+69,DRB069-sectionslock1-orig-no.c,N3,C,3.0,,
+70,DRB070-simd1-orig-no.c,"N1,N4",C,3.0,,
+71,DRB071-targetparallelfor-orig-no.c,"N1,N5",C,3.0,,
+72,DRB072-taskdep1-orig-no.c,N3,C,3.0,,
+73,DRB073-doall2-orig-yes.c,Y2,C,3.0,,true dependence
+74,DRB074-flush-orig-yes.c,Y2,C,3.0,,"reduction,flush"
+75,DRB075-getthreadnum-orig-yes.c,Y1,C,3.0,,
+76,DRB076-flush-orig-no.c,N2,C,3.0,,
+77,DRB077-single-orig-no.c,N1,C,3.0,,
+78,DRB078-taskdep2-orig-no.c,N3,C,3.0,,task
+79,DRB079-taskdep3-orig-no.c,N3,C,3.0,,task
+80,DRB080-func-arg-orig-yes.c,Y6,C,3.0,,
+81,DRB081-func-arg-orig-no.c,N6,C,3.0,,task
+82,DRB082-declared-in-func-orig-yes.c,Y6,C,3.0,,
+83,DRB083-declared-in-func-orig-no.c,N6,C,3.0,,
+84,DRB084-threadprivatemissing-orig-yes.c,Y2,C,3.0,,threadprivate
+85,DRB085-threadprivate-orig-no.c,N2,C,3.0,,threadprivate
+86,DRB086-static-data-member-orig-yes.cpp,Y2,C++,,,"Missing threadprivate for a static member, not referenced within a construct"
+87,DRB087-static-data-member2-orig-yes.cpp,Y2,C++,,,"Missing threadprivate for a static member, referenced within a construct"
+88,DRB088-dynamic-storage-orig-yes.c,Y2,C,3.0,,dynamica storage variable
+89,DRB089-dynamic-storage2-orig-yes.c,Y2,C,3.0,,dynamica storage variable
+90,DRB090-static-local-orig-yes.c,Y2,C,3.0,,static variable
+91,DRB091-threadprivate2-orig-no.c,N2,C,3.0,,threadprivate
+92,DRB092-threadprivatemissing2-orig-yes.c,Y2,C,3.0,,threadprivate
+93,DRB093-doall2-collapse-orig-no.c,N2,C,3.0,,collapse
+94,DRB094-doall2-ordered-orig-no.c,N2,C,3.0,,
+95,DRB095-doall2-taskloop-orig-yes.c,Y2,C,3.0,,
+96,DRB096-doall2-taskloop-collapse-orig-no.c,N2,C,3.0,,
+97,DRB097-target-teams-distribute-orig-no.c,N2,C,3.0,,
+98,DRB098-simd2-orig-no.c,"N1,N2",C,3.0,,SIMD
+99,DRB099-targetparallelfor2-orig-no.c,"N1,N5",C,4.5,,target
+100,DRB100-task-reference-orig-no.cpp,N1,C++,4.5,,task
+101,DRB101-task-value-orig-no.cpp,N1,C++,3.0,,task
+102,DRB102-copyprivate-orig-no.c,N2,C,3.0,,
+103,DRB103-master-orig-no.c,N1,C,3.0,,
+104,DRB104-nowait-barrier-orig-no.c,N3,C,3.0,,
+105,DRB105-taskwait-orig-no.c,N3,C,3.0,,taskwait
+106,DRB106-taskwaitmissing-orig-yes.c,Y3,C,3.0,,task
+107,DRB107-taskgroup-orig-no.c,N3,C,3.0,,task
+108,DRB108-atomic-orig-no.c,N3,C,3.0,,atomic
+109,DRB109-orderedmissing-orig-yes.c,Y3,C,3.0,,
+110,DRB110-ordered-orig-no.c,N3,C,3.0,,
+111,DRB111-linearmissing-orig-yes.c,Y2,C,3.0,,
+112,DRB112-linear-orig-no.c,N2,C,3.0,,
+113,DRB113-default-orig-no.c,N1,C,3.0,,
+114,DRB114-if-orig-yes.c,Y1,C,3.0,,
+115,DRB115-forsimd-orig-yes.c,"Y1,Y4",C,3.0,,SIMD
+116,DRB116-target-teams-orig-yes.c,Y3,C,4.5,,target teams
+117,DRB117-taskwait-waitonlychild-orig-yes.c,Y3,C,3.0,,taskwait
+118,DRB118-nestlock-orig-no.c,N3,C,3.0,,
+119,DRB119-nestlock-orig-yes.c,Y3,C,3.0,,
+120,DRB120-barrier-orig-no.c,N3,C,3.0,,barrier
+121,DRB121-reduction-orig-no.c,N2,C,3.0,,reduction
+122,DRB122-taskundeferred-orig-no.c,N6,C,3.0,,tasks
+123,DRB123-taskundeferred-orig-yes.c,Y6,C,3.0,,task
+124,DRB124-master-orig-yes.c,Y6,C,3.0,,
+125,DRB125-single-orig-no.c,N1,C,3.0,,
+126,DRB126-firstprivatesections-orig-no.c,N1,C,3.0,,firstprivate
+127,DRB127-tasking-threadprivate1-orig-no.c,N1,C,3.0,,
+128,DRB128-tasking-threadprivate2-orig-no.c,N1,C,3.0,,
+129,DRB129-mergeable-taskwait-orig-yes.c,Y2,C,3.0,,
+130,DRB130-mergeable-taskwait-orig-no.c,N2,C,3.0,,task
+131,DRB131-taskdep4-orig-omp45-yes.c,Y3,C,3.0,,taskwait
+132,DRB132-taskdep4-orig-omp45-no.c,"N1,N3",C,4.5,,task
+133,DRB133-taskdep5-orig-omp45-no.c,N3,C,4.5,,task
+134,DRB134-taskdep5-orig-omp45-yes.c,Y1,C,3.0,,
+135,DRB135-taskdep-mutexinoutset-orig-no.c,N3,C,3.0,,task
+136,DRB136-taskdep-mutexinoutset-orig-yes.c,"Y1,Y6",C,3.0,,task
+137,DRB137-simdsafelen-orig-no.c,N1,C,3.0,,SIMD
+138,DRB138-simdsafelen-orig-yes.c,Y6,C,3.0,,simd
+139,DRB139-worksharingcritical-orig-no.c,N1,C,3.0,,SIMD
+140,DRB140-reduction-barrier-orig-yes.c,Y3,C,3.0,,reduction
+141,DRB141-reduction-barrier-orig-no.c,N3,C,3.0,,reduction
+142,DRB142-acquirerelease-orig-yes.c,Y3,C,3.0,,
+143,DRB143-acquirerelease-orig-no.c,N3,C,3.0,,
+144,DRB144-critical-missingreduction-orig-gpu-yes.c,"Y3,Y5",C,4.5,GPU,
+145,DRB145-atomiccritical-orig-gpu-no.c,"N2,N5",C,4.5,GPU,reduction
+146,DRB146-atomicupdate-orig-gpu-no.c,"N1,N3,N5",C,4.5,GPU,atomic
+147,DRB147-critical1-orig-gpu-no.c,"N1,N5",C,4.5,GPU,critical
+148,DRB148-critical1-orig-gpu-yes.c,"Y3,Y5",C,4.5,GPU,
+149,DRB149-missingdata1-orig-gpu-no.c,N5,C,4.5,GPU,
+150,DRB150-missinglock1-orig-gpu-yes.c,"Y3,Y5",C,4.5,GPU,
+151,DRB151-missinglock3-orig-gpu-yes.c,"Y3,Y5",C,4.5,GPU,
+152,DRB152-missinglock2-orig-gpu-no.c,"N3,N5",C,4.5,GPU,
+153,DRB153-missinglock2-orig-gpu-yes.c,"Y2,Y5",C,4.5,GPU,
+154,DRB154-missinglock3-orig-gpu-no.c,"N3,N5",C,4.5,GPU,
+155,DRB155-missingordered-orig-gpu-no.c,"N1,N5",C,4.5,GPU,
+156,DRB156-missingordered-orig-gpu-yes.c,"Y5,Y6",C,4.5,GPU,
+157,DRB157-missingorderedsimd-orig-gpu-yes.c,"Y4,Y5",C,4.5,GPU,SIMD
+158,DRB158-missingtaskbarrier-orig-gpu-no.c,"N1,N5",C,4.5,GPU,
+159,DRB159-nobarrier-orig-gpu-no.c,"N3,N5",C,4.5,GPU,
+160,DRB160-nobarrier-orig-gpu-yes.c,"Y3,Y5",C,4.5,GPU,
+161,DRB161-nolocksimd-orig-gpu-yes.c,"Y3,Y5",C,4.5,GPU,SIMD
+162,DRB162-nolocksimd-orig-gpu-no.c,"N4,N5",C,4.5,GPU,reduction
+163,DRB163-simdmissinglock1-orig-gpu-no.c,"N4,N5",C,4.5,GPU,SIMD
+164,DRB164-simdmissinglock1-orig-gpu-yes.c,"Y3,Y5",C,4.5,GPU,SIMD
+165,DRB165-taskdep4-orig-omp50-yes.c,Y3,C,5.0,,
+166,DRB166-taskdep4-orig-omp50-no.c,N1,C,5.0,,SIMD
+167,DRB167-taskdep4-orig-omp50-no.c,N1,C,5.0,,
+168,DRB168-taskdep5-orig-omp50-yes.c,Y1,C,5.0,,
+169,DRB169-missingsyncwrite-orig-yes.c,Y1,C,3.0,,missing sync
+170,DRB170-nestedloops-orig-no.c,N2,C,3.0,,private clause
+171,DRB171-threadprivate3-orig-no.c,N1,C,3.0,,threadprivate
+172,DRB172-critical2-orig-no.c,"N2,N3",C,3.0,,
+173,DRB173-non-sibling-taskdep-yes.c,Y6,C,3.0,,task
+174,DRB174-non-sibling-taskdep-no.c,N3,C,3.0,,taskwait
+175,DRB175-non-sibling-taskdep2-yes.c,Y6,C,3.0,,task
+176,DRB176-fib-taskdep-no.c,N3,C,3.0,,Fibonacci
+177,DRB177-fib-taskdep-yes.c,Y6,C,3.0,,Fibonacci
+178,DRB178-input-dependence-var-yes.c,Y1,C,3.0,,Input dependence
+179,DRB179-thread-sensitivity-yes.c,Y6,C,3.0,,thread sensitive
+180,DRB180-miniAMR-yes.c,Y6,C,3.0,,miniAMR
+181,DRB181-SmithWaterman-yes.c,Y6,C,3.0,,Smith-Waterman
+182,DRB182-atomic3-no.c,N3,C,3.0,,
+183,DRB183-atomic3-yes.c,Y3,C,3.0,,
+184,DRB184-barrier1-no.c,N3,C,,,"2-thread flag barrier using busy-wait loops and critical,no race"
+185,DRB185-barrier1-yes.c,Y3,C,,,wrong 2-thread flag barrier using busy-waits
+186,DRB186-barrier2-no.c,N3,C,,,uses locks to create a barrier that is used once
+187,DRB187-barrier2-yes.c,Y3,C,,,each thread uses its own lock which doesn't work
+188,DRB188-barrier3-no.c,N3,C,,,"implements 2-thread reuseable barrier using 3 locks,no race"
+189,DRB189-barrier3-yes.c,Y3,C,,,one synchronization missed
+190,DRB190-critical-section2-no.c,"N2,N3",C,,,single producer single consumer with critical sections
+191,DRB191-critical-section2-yes.c,Y3,C,,,has race due to different critical section names
+192,DRB192-critical-section3-no.c,"N2,N3",C,,,signal with busy wait loop using critical sections
+193,DRB193-critical-section3-yes.c,Y3,C,,,has race due to different critical section names
+194,DRB194-diffusion1-no.c,N1,C,,,signal with busy wait loop using critical sections
+195,DRB195-diffusion1-yes.c,Y3,C,,,has race due to the missing of proper synchronization when u1 and u2 are alias
+196,DRB196-diffusion2-no.c,N1,C,,,similar to diffusion1 but two parts of one malloced object used
+197,DRB197-diffusion2-yes.c,Y2,C,,,has race due to the missing of proper synchronization
+198,DRB198-prodcons-no.c,N1,C,,,multiple producer and multiple consumer with critical sections
+199,DRB199-prodcons-yes.c,Y3,C,,,races due to critical sections have different names
+200,DRB200-sync1-no.c,N3,C,,,two threads sync using one lock
+201,DRB201-sync1-yes.c,Y3,C,,,t1 can set then unset while setting t0 and both are write operations
