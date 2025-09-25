@@ -46,14 +46,14 @@ The experiments can be conducted on a Linux machine.
     - `java -version`
     - `civl config`
 - Install other dependencies
-    - `sudo apt install python3-venv gcc cloc` (For latest version of gcc, you need to build it from source (optional).)
+    - `sudo apt install python3-venv gcc cloc` [For latest version of gcc, you need to build it from source (optional)]
     - `python3 -m venv .venv`
     - `source .venv/bin/activate`
     - `pip install pandas progressbar2`
 
 
 ## Dataset Preprocessing
-If you want to start from the scratch, delete the two dataset directories: autoparllm and dataracebench, from the project directory.
+If you want to start from scratch, delete the two dataset directories: autoparllm and dataracebench, from the project directory.
 Then, follow the below steps for preprocessing. You don't need to do this if you want to execute differential testing on the preprocessed datasets.
 
 ### AutoParLLM
@@ -109,7 +109,7 @@ without any output.
 ### DataRaceBench
 - Get the DataRaceBench dataset from `https://github.com/LLNL/dataracebench/tree/v1.4.1/micro-benchmarks`
 - Keep the micro-benchmarks directory under Seq2ParDiff and rename it to dataracebench
-- Delete direcotories: polybench, utilities and benchmarkList.md file from dataracebench
+- Delete direcotories polybench and utilities, and benchmarkList.md file from dataracebench
 
 #### Preprocess Dataset
 - Use function: preprocess.py::preprocess_dataracebench()
@@ -134,7 +134,7 @@ without any output.
 - Generate execution results of Seq2ParDiff, CIVL and ARCHER
     - `python3 log_parser.py`
     - `python3 civl.py`
-- Result files are located under data/<datasetname> directory (i.e., data/autoparllm).
+- Result files are located under data/\<datasetname\> directory (i.e., data/autoparllm).
     - Sequential execution (non-determinism): diff_test_seq.csv, diff_test_seq_fails.log
     - Parallel default threads: diff_test_without_env.csv, diff_test_without_env_fails.log
     - Parallel fixed threads: diff_test_with_env.csv, diff_test_with_env_fails.log
