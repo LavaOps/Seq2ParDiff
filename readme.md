@@ -1,4 +1,5 @@
-This repository contains source code and data for "Differential Testing for Sequential to Parallel Transformations" published at SC Workshops 2025.
+This repository contains source code and data for "Differential Testing for Sequential to Parallel Transformations" published in Workshops of the International Conference for High
+Performance Computing, Networking, Storage and Analysis (SC Workshops '25).
 
 ## Directory Structure
 - **autoparllm** and **dataracebench**: two datasets the experiments were conducted on
