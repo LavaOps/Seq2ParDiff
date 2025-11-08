@@ -1,4 +1,4 @@
-This repository contains source code and data for "Differential Testing for Sequential to Parallel Transformations" published in Workshops of the International Conference for High
+This repository contains source code and data for [Differential Testing for Sequential to Parallel Transformations](https://dl.acm.org/doi/10.1145/3731599.3767365) published in Workshops of the International Conference for High
 Performance Computing, Networking, Storage and Analysis (SC Workshops '25).
 
 ## Directory Structure
