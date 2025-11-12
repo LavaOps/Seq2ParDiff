@@ -1,5 +1,27 @@
 This repository contains source code and data for [Differential Testing for Sequential to Parallel Transformations](https://dl.acm.org/doi/10.1145/3731599.3767365) published in Workshops of the International Conference for High
-Performance Computing, Networking, Storage and Analysis (SC Workshops '25).
+Performance Computing, Networking, Storage and Analysis (SC Workshops '25). 
+
+To reference this work, please use the following BibTeX
+<pre>
+@inproceedings{ahmmed_sc_2025,
+    author = {Ahmmed, Jobayer and Mahmud, Quazi I. and Shim, Junhyung and Li, Liyi and Jannesari, Ali and Cohen, Myra B.},
+    title = {Differential Testing for Sequential to Parallel Transformations},
+    year = {2025},
+    isbn = {9798400718717},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3731599.3767365},
+    doi = {10.1145/3731599.3767365},
+    abstract = {Many high-performance programs can benefit from parallelism creating orders of magnitude speedups in their performance. However, translating code into its parallel equivalent is challenging, time-consuming, and error-prone. In recent years there has been a move to automate this process, creating algorithms to perform translations. While automation removes the manual effort, it needs to be accompanied by strong validation to ensure the parallel program has the same behavior as the sequential one. Incorrect translation can lead to data races, poor performance, rounding problems, or unexpected behavior. In this paper, we present a dynamic validation approach called Seq2ParDiff&nbsp;that uses differential testing to check conformance of the parallel program to the original sequential program version. We evaluate Seq2ParDiff&nbsp;on two sets of benchmarks for OpenMP programs. In the first, we find 20 new faults, outperforming state of the art static techniques. In the second, we find many faults that other tools miss, however we are not as effective in finding some types of data races.},
+    booktitle = {Proceedings of the SC '25 Workshops of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+    pages = {207–216},
+    numpages = {10},
+    keywords = {OpenMP, Differential Testing, Parallel Computing},
+    location = {},
+    series = {SC Workshops '25}
+}
+</pre>
+
 
 ## Directory Structure
 - **autoparllm** and **dataracebench**: two datasets the experiments were conducted on
@@ -143,5 +165,5 @@ without any output.
     - CIVL result: civl.csv 
 
 ## Acknowledgments
-This work is supported in part by NSF grant CCF-2422127. 
+This work is supported in part by NSF grant CCF-2422127. \
 Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
